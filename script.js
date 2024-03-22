@@ -12,10 +12,10 @@ function calculateTime(){
     hour = hour < 10 ? '0' + minute : minute;
     minute = minute < 10 ? '0' + minute : minute;
 
-    document.getElementByid("day").innerHTML = dayNames[dayNumber];
-    document.getElementByid("hour").innerHTML = hour;
-    document.getElementByid("minute").innerHTML = minute;
-    document.getElementByid("ampm").innerHTML = ampm;
+    document.getElementById("day").innerHTML = dayNames[dayNumber];
+    document.getElementById("hour").innerHTML = hour;
+    document.getElementById("minute").innerHTML = minute;
+    document.getElementById("ampm").innerHTML = ampm;
 
     setTimeout(calculateTime, 200);
 }
